@@ -10,7 +10,7 @@ const outfit = localFont({
 const LongCard = (props: Props) => {
   return (
     <div
-      className=" h-max min-h-[475px] w-[318px] rounded-xl bg-[#141414] flex flex-wrap p-3 "
+      className=" h-max min-h-[475px] w-[318px] rounded-xl bg-[#141414] flex flex-wrap p-3 z-40 "
       style={outfit.style}
     >
       <Image

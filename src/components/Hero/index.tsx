@@ -8,13 +8,13 @@ const outfit = localFont({
 });
 export default function Hero({}: Props) {
   return (
-    <main className=" w-full h-full flex items-center justify-center relative ">
+    <main className=" w-full h-fit flex items-center justify-center relative pt-[70px] bg-black ">
       <Image
         src="/assets/hero.png"
         alt="hero"
         width={2200}
         height={2200}
-        className=" w-full h-full object-contain "
+        className=" w-full h-fit object-contain bg-black "
       />
       <div className=" h-max w-max flex flex-col items-center justify-center absolute gap-y-12 ">
         <Image
@@ -37,7 +37,7 @@ export default function Hero({}: Props) {
           </p>
         </div>
         <button
-          className=" flex items-center justify-center gap-x-2 rounded-lg text-white py-3 px-16 bg-[#6A3BEA] text-sm "
+          className=" flex items-center justify-center gap-x-2 rounded-lg text-white py-2 px-14 bg-[#6A3BEA]/80 hover:bg-[#6A3BEA] text-sm "
           style={outfit.style}
         >
           Get Started

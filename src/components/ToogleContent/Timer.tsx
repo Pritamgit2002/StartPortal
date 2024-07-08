@@ -49,7 +49,7 @@ const Timer = (props: Props) => {
 
   return (
     <div
-      className="w-80 h-max rounded-xl bg-[#141414] border-[1.2px] border-[#202020] p-3 space-y-4"
+      className="w-80 h-max rounded-xl bg-[#141414] border-[1.2px] border-[#202020] p-3 space-y-4 z-40 "
       style={outfit.style}
     >
       <div className="w-full flex items-center justify-start gap-x-2 text-[#717171]">

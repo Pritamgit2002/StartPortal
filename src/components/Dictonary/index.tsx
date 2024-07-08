@@ -11,9 +11,17 @@ const outfit = localFont({
 export const Dictonary = (props: Props) => {
   return (
     <div
-      className=" w-full h-max flex flex-col items-center justify-center "
+      className=" w-full h-max flex flex-col items-center justify-center gap-y-9 pt-8 pb-40 "
       style={outfit.style}
     >
+      <div className=" w-full flex flex-col items-center justify-center gap-y-2 ">
+        <span className=" text-2xl text-white font-medium ">
+          Crypto Dictionary
+        </span>
+        <span className=" text-base text-[#6A6A6A] font-medium ">
+          Your one-stop to catch up on all crypto terms
+        </span>
+      </div>
       <Link href="/" className=" relative overflow-hidden rounded-3xl ">
         <Image
           src="/assets/dictonary.svg"
@@ -32,7 +40,7 @@ export const Dictonary = (props: Props) => {
                 Your own crypto dictionary
               </span>
             </div>
-            <div className=" bg-zinc-700/90 p-5 text-xl text-white rounded-full ">
+            <div className=" bg-zinc-700/60 p-5 text-xl text-white rounded-full ">
               <IoBookOutline />
             </div>
           </div>

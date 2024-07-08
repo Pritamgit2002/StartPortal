@@ -18,7 +18,7 @@ export function ToogleContent({}: Props) {
   };
   return (
     <div
-      className={`w-[518px] h-[240px]  p-6 flex items-center justify-start gap-x-4 bg-zinc-700/30 hover:bg-[#2b2b2b]/75 relative  border-[#363636]/80 cursor-pointer ${
+      className={`w-[518px] h-[230px]  p-6 flex items-center justify-start gap-x-4 bg-[#141414] hover:bg-[#2b2b2b]/75 relative  border-[#363636]/80 cursor-pointer z-40 ${
         isOpen
           ? "rounded-t-2xl border-x-[1.2px] border-t-[1.2px] "
           : " rounded-2xl border-[1.2px]"
@@ -31,7 +31,7 @@ export function ToogleContent({}: Props) {
           alt="done"
           width={1200}
           height={1200}
-          className=" w-64 h-44 rounded-xl object-cover "
+          className=" w-64 h-40 rounded-xl object-cover "
         />
       </div>
       <div
@@ -74,7 +74,7 @@ export function ToogleContent({}: Props) {
       </button>
       {isOpen && (
         <div
-          className={` w-[518px] h-[460px] absolute top-[240px] left-0 bg-[#101010] rounded-b-2xl flex flex-col items-center justify-start gap-y-2 pt-6 pb-4 overflow-y-auto border-[#363636]/80 ${
+          className={` w-[518px] h-80 absolute  top-[229px] left-0 bg-[#101010] rounded-b-2xl flex flex-col items-center justify-start gap-y-2 pt-6 pb-4 overflow-y-auto border-[#363636]/80 ${
             isOpen ? "border-x-[1.2px] border-b-[1.2px] " : " border-none "
           } `}
         >

@@ -10,16 +10,16 @@ const outfit = localFont({
 export const CatCard = (props: Props) => {
   return (
     <div
-      className=" w-[265px] flex flex-col items-start gap-y-1 bg-transparent "
+      className=" w-max flex flex-col items-start  gap-y-1 z-40 "
       style={outfit.style}
     >
-      <div className=" relative p-2 border-[2px] border-[#434343] rounded-2xl  ">
+      <div className=" relative p-1 border-[2px] border-[#434343] rounded-3xl  ">
         <Image
           src="/assets/cat1.png"
           alt="cat"
           width={1200}
           height={1200}
-          className=" w-40 h-44 object-cover rounded-2xl "
+          className=" w-36 h-44 object-cover rounded-3xl "
         />
         <div className=" absolute -right-6 -bottom-5 bg-[#131313] p-3 border-[2px] border-[#2F2F2F] rounded-full  ">
           <Image
@@ -34,14 +34,14 @@ export const CatCard = (props: Props) => {
           <IoMdCheckmark />
         </div>
       </div>
-      <div className=" w-full flex flex-col items-start justify-center gap-y-[10px] mt-2 ">
-        <span className=" text-[#9B9B9B] text-xl font-medium leading-snug ">
+      <div className=" w-full flex flex-col items-start justify-center gap-y-[8px] mt-2 ">
+        <span className=" text-[#9B9B9B] text-xl font-medium leading-snug whitespace-nowrap ">
           Intract Certified: Learner NFT
         </span>
-        <p className=" text-[#373737] text-base font-semibold leading-snug ">
+        <p className=" text-[#373737] text-base font-semibold leading-tight ">
           Your crypto black-belt <br /> certificate
         </p>
-        <button className=" text-lg px-16 py-2 border-[1.2px] border-[#202020] text-[#717171] rounded-xl font-medium bg-[#141414] ">
+        <button className=" text-lg px-16 py-2 border-[1.2px] border-[#202020] text-[#717171] rounded-xl font-medium bg-[#141414] leading-snug ">
           Claim
         </button>
       </div>

@@ -9,7 +9,7 @@ const outfit = localFont({
 export const Pepe = (props: Props) => {
   return (
     <div
-      className=" h-max flex flex-col items-center justify-center gap-y-2 "
+      className=" h-max flex flex-col items-center justify-center gap-y-2 z-40 "
       style={outfit.style}
     >
       <div className=" p-1 border-[1.2px] border-[#999999] flex items-center justify-center rounded-full ">
