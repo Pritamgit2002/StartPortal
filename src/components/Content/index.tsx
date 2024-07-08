@@ -68,7 +68,7 @@ export const Content = (props: Props) => {
             alt="image"
             width={1200}
             height={1200}
-            className=" h-fit w-fit object-contain absolute -bottom-16 -left-16  "
+            className=" h-fit w-fit object-contain absolute -bottom-16 -left-16 z-10  "
           />
         </div>
       </div>

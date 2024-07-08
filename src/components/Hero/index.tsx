@@ -8,15 +8,11 @@ const outfit = localFont({
 });
 export default function Hero({}: Props) {
   return (
-    <main className=" w-full h-fit flex items-center justify-center relative pt-[70px] bg-black ">
-      <Image
-        src="/assets/hero.png"
-        alt="hero"
-        width={2200}
-        height={2200}
-        className=" w-full h-fit object-contain bg-black "
-      />
-      <div className=" h-max w-max flex flex-col items-center justify-center absolute gap-y-12 ">
+    <main
+      className="w-full h-max flex items-center justify-center mt-24 xl:mt-32 2xl:mt-60 mb-10 2xl:mb-48 pt-[70px]"
+      style={outfit.style}
+    >
+      <div className=" h-max w-max flex flex-col items-center justify-center gap-y-2 xl:gap-y-6  z-30 ">
         <Image
           src="/assets/academy-animated-logo-57b2ae61.gif"
           alt="hero text"
@@ -24,8 +20,8 @@ export default function Hero({}: Props) {
           height={1200}
           className=" w-72 h-full object-contain opacity-50 "
         />
-        <div className=" flex flex-col items-center justify-center ">
-          <p className=" text-xl font-medium text-[#D2D0D2]  ">
+        <div className=" flex flex-col items-center justify-center leading-snug xl:leading-normal ">
+          <p className=" text-xl font-medium text-[#D2D0D2]  text-center leading-tight ">
             Intract users{" "}
             <span className="text-[#6B6A6B]">have together made more than</span>{" "}
             $100 million <span className="text-[#6B6A6B]">in web3.</span>
