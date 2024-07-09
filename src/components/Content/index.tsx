@@ -14,7 +14,14 @@ export const Content = (props: Props) => {
     <div className=" w-full xl:w-[1200px] h-max flex flex-wrap items-start justify-center px-2 xl:px-0 mx-auto gap-y-24 py-16 ">
       {/* first section */}
       <div className=" w-full h-max flex flex-col items-center sm:items-end relative ">
-        <div className=" w-full z-30 ">
+        <div className=" w-full z-30 relative ">
+          <Image
+            src="/assets/glow.svg"
+            alt="glow"
+            width={2000}
+            height={2000}
+            className=" w-40 h-24 object-contain absolute top-10 -left-40  "
+          />
           <ToogleContent />
         </div>
         <div className=" w-max flex items-center justify-end mt-[425px] sm:mt-5 z-40 ">
