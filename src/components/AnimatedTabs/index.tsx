@@ -15,7 +15,7 @@ export function AnimatedTabs() {
 
   return (
     <div
-      className=" w-max flex space-x-1 border-[1.2px] border-white/25  rounded-full backdrop-blur-md  "
+      className=" w-max flex space-x-1 z-50 border-[1.2px] border-white/25  rounded-full backdrop-blur-md  "
       style={outfit.style}
     >
       {tabs.map((tab) => (
