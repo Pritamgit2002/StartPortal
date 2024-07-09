@@ -1,3 +1,4 @@
+import { AnimatedTabs } from "@/components/AnimatedTabs";
 import { Content } from "@/components/Content";
 import CryptoCreates from "@/components/Crypto-Creators";
 import { Dictonary } from "@/components/Dictonary";
@@ -7,7 +8,7 @@ import { Navbar } from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main className="bg-black h-full w-full relative overflow-hidden">
+    <main className="bg-black h-full w-full relative overflow-hidden ">
       <div className="absolute top-0 w-full h-full">
         <div
           className="bg-contain mt-[68px] h-full bg-no-repeat "
