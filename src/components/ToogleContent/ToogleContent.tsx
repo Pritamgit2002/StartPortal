@@ -18,14 +18,14 @@ export function ToogleContent({}: Props) {
   };
   return (
     <div
-      className={`w-[518px] h-[230px]  p-6 flex items-center justify-start gap-x-4 bg-[#141414] hover:bg-[#2b2b2b]/75 relative  border-[#363636]/80 cursor-pointer z-40 ${
+      className={` w-full sm:w-[455px] md:w-[500px] lg:w-[518px] h-[200px] md:h-[230px] p-2 sm:p-6 flex items-center justify-start gap-x-4 bg-[#141414] hover:bg-[#2b2b2b]/75 relative  border-[#363636]/80 cursor-pointer z-40 ${
         isOpen
           ? "rounded-t-2xl border-x-[1.2px] border-t-[1.2px] "
           : " rounded-2xl border-[1.2px]"
       } `}
       onClick={handleToggle}
     >
-      <div className=" p-2 rounded-xl bg-zinc-800 border-[0.5px] border-gray-300 ">
+      <div className=" p-1 sm:p-2 rounded-xl bg-zinc-800 border-[0.5px] border-gray-300 ">
         <Image
           src="/assets/content_a.png"
           alt="done"
@@ -38,20 +38,20 @@ export function ToogleContent({}: Props) {
         className=" w-full flex flex-col items-start justify-between gap-y-1 "
         style={outfit.style}
       >
-        <span className=" text-2xl text-white font-medium ">
+        <span className=" text-2xl text-white font-medium tracking-tighter sm:tracking-normal  ">
           Basics of Crypto
         </span>
-        <p className=" text-base text-[#727272] font-medium ">
+        <p className=" text-base text-[#727272] font-medium tracking-tighter sm:tracking-normal  ">
           The safest and easiest place to start your crypto journey!
         </p>
-        <div className="flex items-center justify-start space-x-1 select-none ">
+        <div className="flex items-center justify-start gap-x-[2px] sm:gap-x-1 select-none ">
           {dashes.map((dash, index) => (
             <div key={index} className="text-center text-[#373737] ">
               {dash}
             </div>
           ))}
         </div>
-        <div className=" p-2 bg-[#252525] border-[1px] border-[#2E2E2E] w-max flex items-center justify-center gap-x-1 rounded-l-full rounded-r-full">
+        <div className=" p-1 sm:p-2 bg-[#252525] border-[1px] border-[#2E2E2E] w-max flex items-center justify-center gap-x-1 rounded-l-full rounded-r-full">
           <Image
             src="/assets/coin.svg"
             alt="coin"
@@ -74,7 +74,7 @@ export function ToogleContent({}: Props) {
       </button>
       {isOpen && (
         <div
-          className={` w-[518px] h-80 absolute  top-[229px] left-0 bg-[#101010] rounded-b-2xl flex flex-col items-center justify-start gap-y-2 pt-6 pb-4 overflow-y-auto border-[#363636]/80 ${
+          className={` w-full sm:w-[455px] md:w-[500px] lg:w-[518px] h-72 md:h-80 absolute top-[199px] md:top-[229px] left-0 bg-[#101010] rounded-b-2xl flex flex-col items-center justify-start gap-y-2 pt-6 pb-4 border-[#363636]/80 overflow-y-auto overflow-x-hidden ${
             isOpen ? "border-x-[1.2px] border-b-[1.2px] " : " border-none "
           } `}
         >
@@ -94,7 +94,7 @@ export function SubToogleContent({}: Props) {
     <>
       {content.map((item, i) => (
         <div
-          className=" w-[465px] p-3 flex items-center justify-start gap-x-4 rounded-xl cursor-pointer bg-[#1C1C1C] hover:bg-[#2D2D2D]/80 transition-all duration-75 ease-out "
+          className=" w-full sm:w-[465px] p-1 sm:p-3 flex items-center justify-start gap-x-4 rounded-xl cursor-pointer bg-[#1C1C1C] hover:bg-[#2D2D2D]/80 transition-all duration-75 ease-out "
           style={outfit.style}
         >
           <div className=" ">
@@ -108,7 +108,7 @@ export function SubToogleContent({}: Props) {
           </div>
           <div className=" flex flex-col items-start justify-between ">
             <span className=" text-[#CFCFCF] ">{item.title}</span>
-            <div className="flex items-center justify-start space-x-1">
+            <div className="flex items-center justify-start space-x-[2px] sm:space-x-1">
               {dashes.map((dash, index) => (
                 <div key={index} className="text-center text-[#373737] ">
                   {dash}

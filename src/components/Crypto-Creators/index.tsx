@@ -21,10 +21,10 @@ const outfit = localFont({
 const CryptoCreates = (props: Props) => {
   return (
     <div
-      className=" w-full h-max py-16 flex flex-col items-center justify-center gap-y-10 border-b-2 border-[#1B1B1B]"
+      className=" w-full h-max py-16 flex flex-col items-center justify-center gap-y-10 border-b-2 border-[#1B1B1B] px-2 "
       style={outfit.style}
     >
-      <div className=" w-full flex flex-col items-center justify-center gap-y-1">
+      <div className=" w-full flex flex-col items-center justify-center gap-y-1 text-center ">
         <span className=" text-2xl text-white font-semibold ">
           Top Crypto Creators and Projects to Follow
         </span>
@@ -32,9 +32,9 @@ const CryptoCreates = (props: Props) => {
           Answers to your crypto doubts, straight from the experts
         </span>
       </div>
-      <div className=" w-full flex flex-wrap items-center justify-center gap-x-4">
+      <div className=" w-full flex flex-wrap items-center justify-center gap-4">
         {content.map((item, i) => (
-          <div className=" h-96 w-72 rounded-2xl bg-yellow-400 relative overflow-hidden bg-gradient-to-t from-gray-400/90 to-gray-100/25 cursor-pointer group ">
+          <div className=" h-96 w-72 rounded-2xl bg-yellow-400 relative overflow-hidden bg-gradient-to-b from-gray-400/90 to-gray-100/25 cursor-pointer group ">
             <div className=" absolute top-4 right-4 border-[1px] border-[#ffffff]/30 flex items-center justify-center p-3 rounded-full bg-black/20 ">
               <Image
                 src="/assets/reel.svg"
@@ -55,7 +55,7 @@ const CryptoCreates = (props: Props) => {
               alt="photo"
               width={1200}
               height={1200}
-              className=" w-fit h-fit object-contain "
+              className=" w-full h-full object-cover "
             />
             <span className=" text-2xl font-semibold text-white mx-4 leading-relaxed absolute h-20  bottom-0 ">
               {item.title}

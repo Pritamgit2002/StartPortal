@@ -19,7 +19,7 @@ export const Footer = (props: Props) => {
       style={outfit.style}
     >
       {/* first section */}
-      <div className=" w-max min-w-[1248px] flex items-start justify-start gap-x-32 border-b-[1.2px] border-[#646464]/60 py-6 ">
+      <div className="w-full max-w-[1248px] flex flex-wrap md:flex-col lg:flex-row items-start justify-start gap-y-14 md:gap-y-20 lg:gap-x-16  2xl:gap-x-32 border-b-[1.2px] border-[#646464]/60 py-6 px-4 md:px-8 xl:px-0  ">
         <div className=" flex flex-col items-start justify-center gap-y-4 w-72 ">
           <span className=" text-3xl font-semibold text-white ">intract</span>
           <p className=" text-base font-medium text-[#7D7D7D] ">
@@ -27,9 +27,9 @@ export const Footer = (props: Props) => {
             100x rewards
           </p>
         </div>
-        <div className=" w-max flex items-start justify-center gap-x-9 ">
+        <div className=" w-max flex flex-wrap 2xl:flex-row items-start justify-start xl:justify-center gap-6 xl:gap-x-9 ">
           {content_footer.map((item, i) => (
-            <div className=" w-36 flex flex-col gap-y-1 items-start justify-start text-base text-white ">
+            <div className="  w-max xl:w-36 flex flex-col gap-y-1 items-start justify-start text-base text-white ">
               <span className=" font-semibold ">{item.title}</span>
               <ul>
                 {item.links.map((link, linkIndex) => (
@@ -46,7 +46,7 @@ export const Footer = (props: Props) => {
       </div>
 
       {/* second section */}
-      <div className=" w-max max-w-[1248px] flex items-start leading-snug py-8  border-b-[1.2px] border-[#646464]/60">
+      <div className=" w-full xl:w-[1248px] flex items-start leading-snug py-8  border-b-[1.2px] border-[#646464]/60 px-4 md:px-8 xl:px-0 ">
         <p className="  text-[#7D7D7D]">
           <span className="text-white">Disclaimer: </span>
           Crypto Products, Virtual Digital Assets, and NFTs are unregulated and
@@ -62,7 +62,7 @@ export const Footer = (props: Props) => {
       </div>
 
       {/* third section */}
-      <div className=" w-max min-w-[1248px] flex items-center justify-between py-6 ">
+      <div className=" w-full xl:w-[1248px] flex flex-wrap items-center justify-between py-6 px-4 md:px-8 xl:px-0 gap-y-8  ">
         <div>
           <p className=" uppercase text-white ">
             CREATED BY{" "}

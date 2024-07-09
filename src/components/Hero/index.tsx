@@ -14,19 +14,19 @@ export default function Hero({}: Props) {
     >
       <div className=" h-max w-max flex flex-col items-center justify-center gap-y-2 xl:gap-y-6  z-30 ">
         <Image
-          src="/assets/academy-animated-logo-57b2ae61.gif"
+          src="/assets/logo.gif"
           alt="hero text"
           width={1200}
           height={1200}
           className=" w-72 h-full object-contain opacity-50 "
         />
         <div className=" flex flex-col items-center justify-center leading-snug xl:leading-normal ">
-          <p className=" text-xl font-medium text-[#D2D0D2]  text-center leading-tight ">
+          <p className=" text-lg sm:text-xl font-medium text-[#D2D0D2]  text-center leading-tight tracking-tight sm:tracking-normal ">
             Intract users{" "}
             <span className="text-[#6B6A6B]">have together made more than</span>{" "}
             $100 million <span className="text-[#6B6A6B]">in web3.</span>
           </p>
-          <p className=" text-xl font-medium text-[#D2D0D2]  ">
+          <p className=" text-lg sm:text-xl font-medium text-[#D2D0D2] tracking-tight sm:tracking-normal ">
             {" "}
             <span className="text-[#6B6A6B]">Join them and</span> learn how to
             earn crypto!

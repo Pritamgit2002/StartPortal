@@ -9,7 +9,7 @@ const outfit = localFont({
 export const TextContent = (props: Props) => {
   return (
     <div
-      className=" w-80 rounded-md border-[1px] border-white/20 bg-[#131313] z-40 "
+      className=" w-80 rounded-b-md md:rounded-md border-b-[1px] border-x-[1px] md:border-[1px] border-white/20 bg-[#131313] z-20 "
       style={outfit.style}
     >
       <div className=" w-full flex items-center justify-start gap-x-1 border-b-[1px] border-[#1F1F1F] ">

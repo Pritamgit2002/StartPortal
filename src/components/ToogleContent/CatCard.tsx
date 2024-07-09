@@ -35,13 +35,13 @@ export const CatCard = (props: Props) => {
         </div>
       </div>
       <div className=" w-full flex flex-col items-start justify-center gap-y-[8px] mt-2 ">
-        <span className=" text-[#9B9B9B] text-xl font-medium leading-snug whitespace-nowrap ">
+        <span className=" text-[#9B9B9B] text-xl font-medium leading-snug whitespace-nowrap tracking-tighter lg:tracking-normal ">
           Intract Certified: Learner NFT
         </span>
         <p className=" text-[#373737] text-base font-semibold leading-tight ">
           Your crypto black-belt <br /> certificate
         </p>
-        <button className=" text-lg px-16 py-2 border-[1.2px] border-[#202020] text-[#717171] rounded-xl font-medium bg-[#141414] leading-snug ">
+        <button className=" text-lg px-16 py-2 border-[1.2px] border-[#202020] text-[#717171] rounded-xl font-medium bg-[#141414] leading-snug cursor-not-allowed ">
           Claim
         </button>
       </div>
