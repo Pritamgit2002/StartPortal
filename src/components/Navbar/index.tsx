@@ -68,11 +68,11 @@ export const Navbar = (props: Props) => {
           />
         </div>
         <div className=" flex items-center justify-center gap-x-2 ">
-          <input
+          {/* <input
             type="text"
             className=" w-0 md:w-80 rounded-full h-11 placeholder:pl-4 placeholder:text-sm bg-[#171717] border-[0.8px] border-white/10 placeholder:hidden "
             placeholder="Seach for ecosystem,trending quests etc,."
-          />
+          /> */}
           <div className=" p-3 border-[1.5px] border-[#D8761C] bg-[#0F091F] rounded-full cursor-pointer ">
             <Image
               src="/assets/tv.svg"

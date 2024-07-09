@@ -10,7 +10,7 @@ const outfit = localFont({
 export const CatCard = (props: Props) => {
   return (
     <div
-      className=" w-max flex flex-col items-start  gap-y-1 z-40 "
+      className=" w-max flex flex-col items-start  gap-y-1 z-40 bg-transparent "
       style={outfit.style}
     >
       <div className=" relative p-1 border-[2px] border-[#434343] rounded-3xl  ">

@@ -1,6 +1,6 @@
 import React from "react";
 import localFont from "next/font/local";
-import Link from "next/link";
+
 import { content_footer } from "./content";
 import {
   FaDiscord,
@@ -8,6 +8,7 @@ import {
   FaTelegramPlane,
   FaTwitter,
 } from "react-icons/fa";
+import Link from "next/link";
 type Props = {};
 const outfit = localFont({
   src: "../../../public/font/Outfit-VariableFont_wght.ttf",
@@ -29,15 +30,19 @@ export const Footer = (props: Props) => {
         </div>
         <div className=" w-max flex flex-wrap 2xl:flex-row items-start justify-start xl:justify-center gap-6 xl:gap-x-9 ">
           {content_footer.map((item, i) => (
-            <div className="  w-max xl:w-36 flex flex-col gap-y-1 items-start justify-start text-base text-white ">
-              <span className=" font-semibold ">{item.title}</span>
-              <ul>
+            <div
+              key={i}
+              className="w-max xl:w-36 flex flex-col gap-y-1 items-start justify-start text-base text-white "
+            >
+              <span className="font-semibold">{item.title}</span>
+              <ul className="cursor-pointer ">
                 {item.links.map((link, linkIndex) => (
-                  <Link key={linkIndex} href={link}>
-                    <li className="mb-1 font-medium text-[#7D7D7D] hover:text-white duration-200 ease-in transition-all ">
-                      {link}
-                    </li>
-                  </Link>
+                  <li
+                    key={linkIndex}
+                    className="mb-1 font-medium text-[#7D7D7D] !hover:text-white duration-200 ease-in transition-all !cursor-pointer lg:whitespace-nowrap "
+                  >
+                    <a href={link}>{link}</a>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -66,12 +71,11 @@ export const Footer = (props: Props) => {
         <div>
           <p className=" uppercase text-white ">
             CREATED BY{" "}
-            <Link
-              href="/"
-              className=" underline underline-offset-1 cursor-pointer hover:text-[#7D7D7D]  "
-            >
-              INTRACT
-            </Link>{" "}
+            <Link href="/" legacyBehavior>
+              <a className="underline underline-offset-1 cursor-pointer hover:text-[#7D7D7D]">
+                INTRACT
+              </a>
+            </Link>
           </p>
         </div>
         <div className=" w-max flex items-center justify-center gap-x-3 ">

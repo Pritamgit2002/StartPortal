@@ -22,7 +22,7 @@ export default function Hero({}: Props) {
     >
       <div className=" h-max w-max flex flex-col items-center justify-center gap-y-2 xl:gap-y-6  z-30 ">
         <Image
-          src="/assets/logo.gif"
+          src="/assets/hero_text.gif"
           alt="hero text"
           width={1200}
           height={1200}

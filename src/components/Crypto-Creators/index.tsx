@@ -34,7 +34,7 @@ const CryptoCreates = (props: Props) => {
       </div>
       <div className=" w-full flex flex-wrap items-center justify-center gap-4">
         {content.map((item, i) => (
-          <div className=" h-96 w-72 rounded-2xl bg-yellow-400 relative overflow-hidden bg-gradient-to-b from-gray-400/90 to-gray-100/25 cursor-pointer group ">
+          <div className=" h-96 w-72 rounded-2xl bg-yellow-400 relative overflow-hidden cursor-pointer group ">
             <div className=" absolute top-4 right-4 border-[1px] border-[#ffffff]/30 flex items-center justify-center p-3 rounded-full bg-black/20 ">
               <Image
                 src="/assets/reel.svg"
@@ -57,9 +57,11 @@ const CryptoCreates = (props: Props) => {
               height={1200}
               className=" w-full h-full object-cover "
             />
-            <span className=" text-2xl font-semibold text-white mx-4 leading-relaxed absolute h-20  bottom-0 ">
-              {item.title}
-            </span>
+            <div className=" bg-gradient-to-t from-gray-800/50 to-gray-400/25 backdrop-blur-sm absolute bottom-0 h-20 w-full  ">
+              <span className=" text-2xl font-medium text-white/70 mx-4 leading-relaxed absolute h-20  bottom-0 ">
+                {item.title}
+              </span>
+            </div>
             {/* </div> */}
           </div>
         ))}
